@@ -1,1 +1,1 @@
-# thux_high-availability
+# Thux -> High Availability
