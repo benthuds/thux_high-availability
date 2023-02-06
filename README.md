@@ -1,1 +1,1 @@
-# Thux -> High Availability
+# Thux => High Availability
