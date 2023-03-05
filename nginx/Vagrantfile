@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
       config.vm.define "nginx_#{i}" do |nginx|
           nginx.vm.box = "oraclelinux/7"
           nginx.vm.box_url = "https://oracle.github.io/vagrant-projects/boxes/oraclelinux/7.json"
-          nginx.vm.network "private_network", name: "vboxnet0", ip: "172.19.3.1#{i}"
+          nginx.vm.network "private_network", name: "vboxnet0", ip: "172.19.3.1#{i+3}"
           nginx.vm.hostname = "nginx-0#{i}"
           nginx.ssh.insert_key = false
           nginx.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key', '~/.ssh/id_rsa']
